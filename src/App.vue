@@ -12,12 +12,11 @@ import cBtn from './components/cBtn/cBtn.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
+    </div>
 
-      <div class="btn-group">
-        <cBtn label="Default button" />
-        <cBtn label="primary button" color="primary"/>
-      </div>
-
+    <div class="header-btn btn-group">
+      <cBtn label="Default button" />
+      <cBtn label="primary button" color="primary"/>
     </div>
   </header>
 
