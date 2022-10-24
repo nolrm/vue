@@ -2,10 +2,11 @@
   "name": "vue-project",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 4173",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "dev": "vite",
+    "preview": "vite preview --port 4173"
   },
   "dependencies": {
     "vue": "^3.2.38",
@@ -13,6 +14,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/cli-plugin-unit-mocha": "^5.0.8",
+    "@vue/test-utils": "^2.0.0-0",
+    "chai": "^4.2.0",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
     "node-sass": "^7.0.3",
