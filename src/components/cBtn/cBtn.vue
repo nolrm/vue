@@ -4,30 +4,40 @@
     :class="btnClass"
     @click="click"
   >
+  <!-- TODO icon -->
   {{ label }}
   </button>
 </template>
 
 <script>
   export default {
-    name: "btn",
+    name: "cBtn",
     props: {
       id: {
         type: String,
-        required: false
+        required: false,
+        description: 'Button id'
       },
       class: {
         type: String,
         required: false,
+        description: 'Button custom class'
       },
       color: {
         type: String,
         required: false,
+        description: 'Button colour'
       },
       label: {
         type: String,
-        required: true
-      }
+        required: true,
+        description: 'Element label'
+      },
+      variant: {
+        type: String,
+        required: false,
+        description: 'Button different design. Icon, Flat and etc..'
+      },
     },
 
     data() {
@@ -37,9 +47,9 @@
     },
 
     methods: {
-      click: () => {
+      click() {
         console.log('on -- Click')
-        // this.$emit('submit')
+        this.$emit('submit')
       }
     },
 

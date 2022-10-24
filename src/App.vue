@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import btn from './components/btn/btn.vue'
+import cBtn from './components/cBtn/cBtn.vue'
 </script>
 
 <template>
@@ -14,10 +14,10 @@ import btn from './components/btn/btn.vue'
       </nav>
 
       <div class="btn-group">
-        <btn label="Default button" />
-        <btn label="primary button" color="primary"/>
+        <cBtn label="Default button" />
+        <cBtn label="primary button" color="primary"/>
       </div>
-      
+
     </div>
   </header>
 
