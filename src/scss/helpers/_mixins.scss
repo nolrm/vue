@@ -1,0 +1,13 @@
+
+/*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+@mixin btn($bg, $text) {
+  color: $text;
+  background-color: $bg;
+  border-color: $bg;
+
+  &:hover {
+    background-color: darken($color: $bg, $amount: 10%)
+  }
+}
