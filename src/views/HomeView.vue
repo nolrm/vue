@@ -9,7 +9,7 @@ import cList from '../components/cList/cList.vue'
 
     <h1>Lorem ipsum</h1>
 
-    <cList :list="itemList" />
+    <!-- <cList :list="itemList" /> -->
 
   </main>
 </template>
