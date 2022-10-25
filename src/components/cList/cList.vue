@@ -7,6 +7,10 @@
       </small>
     </h3>
   </div>
+
+  <div>
+    {{ getCountry }}
+  </div>
 </template>
 
 <script>
@@ -41,6 +45,13 @@
         console.log('this.list --- ', this.list)
         return this.list;
       },
+      getCountry() {
+        const list = this.list;
+
+        let item = list.filter((i) => i.code == 'nz');
+        
+        return item[0].name;
+      }
     }
   };
 </script>
