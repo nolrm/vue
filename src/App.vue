@@ -11,6 +11,7 @@ import cBtn from './components/cBtn/cBtn.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/test">Test</RouterLink>
       </nav>
     </div>
 
